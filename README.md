@@ -1,19 +1,22 @@
-# capstone pyhton project
-Data Preparation and Integration
-The project began with understanding three core datasets: employee details (including personal and job information), project assignments (with cost and status), and seniority levels. Each dataframe contained unique and interconnected attributes such as employee ID, project costs, cities, ages, designation levels, and project statuses. The first major task was to join all three dataframes into a unified "Final" dataframe by merging on common keys, ensuring seamless analysis across different dimensions.
+# Capstone pyhton project
+Description:
+This project utilizes Python and pandas for advanced analysis of employee, project, and seniority datasets. By merging multiple dataframes, I created a comprehensive dataset for extracting key insights. The workflow includes calculating bonuses for employees who completed their projects, updating designation levels based on performance, and using age criteria for promotions. I also transformed columns (adding titles, dropping gender), aggregated total project costs by employee, and filtered employee details by city name—all through robust data manipulation tasks.
 
-Analytical Transformations
-Following the integration, a new bonus column was created in the final dataframe. This column allocated a 5% bonus based on project costs, but only for employees who had finished their respective projects, which required conditional logic and filtering entries where the project status was "Finished".
+Skills:
+Data cleaning, Data merging, Conditional logic, Feature engineering, Data transformation, Aggregation, Data querying, pandas operations
 
-One of the advanced manipulations involved adjusting the designation levels. For employees whose projects were marked as "Fail," their designation level was demoted by 1. The dataset was further filtered by removing any employee records with a designation level above 4, aligning with business rules that restrict eligibility for heading projects.
+Technology:
+Python, pandas, numpy, Jupyter Notebook
 
-Data Cleaning and Enrichment
-To enhance presentation, titles ("Mr." or "Mrs.") were prefixed to first names, and the redundant gender column was dropped for conciseness and clarity. Designation levels were also promoted by 1 for employees older than 29, using an IF condition, thus demonstrating proficiency in additional pandas transformations.
+Methods:
 
-Cost Aggregation and Specialized Views
-Another significant achievement was aggregating project costs for each employee across all assignments. This was stored in a new dataframe titled "TotalProjCost," with employee ID, name, and their total project expenditure. Such aggregation required grouping and sum operations, providing an executive-level overview of financial contributions by staff members.
+Merging multiple dataframes
 
-The project also featured advanced querying capabilities. As a final step, the solution printed all employee records where the city name contained the letter "o," utilizing string operations and logical filtering in pandas.
+Applying conditional column updates
 
-Skills Demonstrated
-This capstone demonstrates proficiency in data merging, conditional logic, aggregation, string processing, and dataframe management—key skills for Python-based data analysis. It highlights expertise in cleaning, joining, filtering, and transforming tabular data to extract actionable business insights, making this project a valuable addition to any analytics portfolio.
+Performing aggregation and filtering
+
+String manipulation and column transformations
+
+Result:
+The final analysis generated a unified view of employees and their project histories, reflecting updated designation levels, bonus allocations, and total project expenditures. By leveraging pandas, I delivered actionable insights for employee performance and cost management, while demonstrating expertise in end-to-end data analysis and real-world business logic.
